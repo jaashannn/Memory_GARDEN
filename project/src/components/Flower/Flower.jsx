@@ -53,11 +53,11 @@ function Flower({ memory }) {
         </div>
       </div>
       
-      {showMemory && (
-        <div style={flowerStyles.memoryText}>
-          <p>{memory.message}</p>
-        </div>
-      )}
+  {showMemory && (
+  <div style={flowerStyles.memoryText}>
+    <p style={{ color: 'black' }}>{memory.message}</p>
+  </div>
+)}
 
       <div style={flowerStyles.soil}></div>
     </div>
