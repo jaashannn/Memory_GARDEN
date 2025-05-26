@@ -1,0 +1,90 @@
+const colors = {
+  primary: '#f8bbce', 
+  secondary: '#c9e4f8', 
+  accent: '#d7f0e0',
+  text: '#5a4a66',
+  lightText: '#a387a6',
+  soil: '#85634b',
+  packet: '#ffffff',
+}
+
+export const seedPacketStyles = {
+  container: {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.packet,
+    borderRadius: '16px',
+    padding: '24px',
+    minHeight: '280px',
+    boxShadow: '0 8px 16px rgba(212, 143, 184, 0.1)',
+    cursor: 'pointer',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    overflow: 'hidden',
+    border: '2px solid rgba(212, 143, 184, 0.2)',
+    userSelect: 'none',
+    '&:hover': {
+      transform: 'translateY(-4px)',
+      boxShadow: '0 12px 24px rgba(212, 143, 184, 0.15)'
+    }
+  },
+  packet: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '80%',
+  },
+  title: {
+    color: colors.text,
+    fontSize: '1.25rem',
+    fontWeight: '600',
+    marginBottom: '16px',
+    textAlign: 'center',
+  },
+  emoji: {
+    fontSize: '3rem',
+    marginBottom: '16px',
+    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
+  },
+  instruction: {
+    color: colors.lightText,
+    fontSize: '0.875rem',
+    marginTop: '16px',
+    fontStyle: 'italic',
+  },
+  planting: {
+    transform: 'scale(0.95)',
+    backgroundColor: '#f9f6e8',
+  },
+  plantingAnimation: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  seed: {
+    position: 'absolute',
+    width: '16px',
+    height: '24px',
+    backgroundColor: '#d2b48c',
+    borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+    top: '40%',
+    animation: 'seedFall 1s forwards',
+    zIndex: 2,
+  },
+  soil: {
+    position: 'absolute',
+    bottom: '0',
+    width: '80%',
+    height: '40px',
+    backgroundColor: colors.soil,
+    borderRadius: '8px 8px 0 0',
+  },
+}
